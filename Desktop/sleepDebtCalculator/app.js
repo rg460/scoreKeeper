@@ -48,4 +48,4 @@ const getSleepHours = day =>{
      console.log(`You got ${ idealSleepHours - actualSleepHours} less than your recomended weekly hours of sleep.Get some rest`)
     }
   }
-  console.log(calculateSleepDebt());
+  console.log(calculateSleepDebt()); // comment
