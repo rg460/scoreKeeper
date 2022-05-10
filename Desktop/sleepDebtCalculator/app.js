@@ -37,3 +37,15 @@ const getSleepHours = day =>{
     const idealHours = 8;
     return idealHours * 7 ;
   }
+  const calculateSleepDebt = () =>{
+    const actualSleepHours = getActualSleepHours();
+    idealSleepHours = getIdealSleepHours(2);
+    if(actualSleepHours === idealSleepHours ){
+      console.log('You got the perfect amount of sleep')
+    } else if(actualSleepHours > idealSleepHours ){
+      console.log(`You got ${actualSleepHours - idealSleepHours} more than your recomended weekly hours of sleep`)
+    } else if (actualSleepHours < idealSleepHours ){
+     console.log(`You got ${ idealSleepHours - actualSleepHours} less than your recomended weekly hours of sleep.Get some rest`)
+    }
+  }
+  console.log(calculateSleepDebt());
